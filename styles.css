@@ -1,0 +1,291 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem; /* Reducir un poco el tamaño global de la fuente */
+    max-width: 90%; /* Reducir el ancho total de la página */
+    margin: 0 auto; /* Centrar el contenido */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+}
+
+/* Cards in the catalog */
+.catalog {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coffee-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coffee-card img {
+    max-height: 200px; /* Fija un máximo para la altura */
+    object-fit: cover; /* Recorta la imagen para mantener proporciones */
+    width: 100%; /* Garantiza que las imágenes ocupen todo el ancho del contenedor */
+}
+
+.coffee-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.coffee-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.coffee-card .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.coffee-card .btn-order {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.coffee-card .btn-order:hover {
+    background-color: #e68900;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Owl Carousel adjustments */
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .coffee-card {
+    width: 95%; /* Mantener las tarjetas del mismo tamaño */
+    max-width: 300px; /* Limitar el ancho máximo */
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: #e68900;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #ddd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #ff9800;
+}
+
+/* Sección destacada */
+.featured {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.featured img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.featured-content {
+    flex: 1;
+}
+
+.featured-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.featured-content .price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.featured-content .btn-order {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.featured-content .btn-order:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff9800;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+    outline: none;
+}
+
+/* Button styles */
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #e68900;
+    transform: translateY(-2px);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+    background-color: #d47700;
+    transform: translateY(1px);
+}
+
+/* Disabled button styles */
+button:disabled,
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}

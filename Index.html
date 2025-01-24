@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aromático - Catálogo Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En Café Aromático, nos apasiona ofrecer la mejor experiencia de café. Nuestros granos son cuidadosamente seleccionados y tostados para brindar el sabor perfecto en cada taza.</p>
+        </section>
+
+        <section id="catalog" class="catalog">
+            <h2>Nuestro Catálogo</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="Espresso Intenso.jpg" alt="Espresso Intenso">
+                        <h3>Espresso Intenso</h3>
+                        <p>Un shot de pura energía y sabor</p>
+                        <span class="price">$2.50</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="Cappuccino Cremoso.jpg" alt="Cappuccino Cremoso">
+                        <h3>Cappuccino Cremoso</h3>
+                        <p>El equilibrio perfecto entre café y espuma</p>
+                        <span class="price">$3.50</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="latte-suave.jpg" alt="Latte Suave">
+                        <h3>Latte Suave</h3>
+                        <p>Delicada mezcla de espresso y leche vaporizada</p>
+                        <span class="price">$3.75</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="Mocha-Chocolatoso.jpg" alt="Mocha Chocolatoso">
+                        <h3>Mocha Chocolatoso</h3>
+                        <p>La fusión perfecta de café y chocolate</p>
+                        <span class="price">$4.00</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="Caramel Macchiato.jpg" alt="Caramel Macchiato">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Dulce tentación de vainilla y caramelo</p>
+                        <span class="price">$4.25</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="coffee-card">
+                        <img src="frappe-helado.jpg" alt="Frappé Helado">
+                        <h3>Frappé Helado</h3>
+                        <p>Refrescante bebida de café para días calurosos</p>
+                        <span class="price">$4.50</span>
+                        <button class="btn-order">Ordenar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <h2>Destacado del Mes</h2>
+            <div class="featured-product">
+                <img src="especial.jpg" alt="Café Especial del Mes">
+                <div class="featured-content">
+                    <h3>Blend Exótico de Sumatra</h3>
+                    <p>Descubre los sabores únicos de nuestro blend especial de Sumatra. Notas de chocolate negro, especias y un toque de cítricos te transportarán a tierras lejanas.</p>
+                    <span class="price">$15.99 / 250g</span>
+                    <button class="btn-order">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-submit" style="margin-bottom: 20px;">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Café Aromático. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
